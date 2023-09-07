@@ -55,6 +55,24 @@ What went wrong / was challenging, how'd you figure it out, and what did you lea
 
 
 ```python
+
+
+```
+### Wiring
+
+![WiringSolution](images/I2C_M4_Solution.png)
+
+
+
+
+
+
+## CircuitPython_LCD
+
+### Description & Code
+this asignment was to make a led flash a rainbow.
+```python
+Code goes here
 import board
 import time
 import digitalio
@@ -83,24 +101,6 @@ lcd = LCD(I2CPCF8574Interface(i2c, 0x27), num_rows=2, num_cols=16)
 
 # Loop forever.
 while True:
-
-```
-### Wiring
-
-![WiringSolution](images/I2C_M4_Solution.png)
-
-
-
-
-
-
-## CircuitPython_LCD
-
-### Description & Code
-
-```python
-Code goes here
-
 ```
 
 ### Evidence
@@ -109,10 +109,73 @@ Pictures / Gifs of your work should go here.  You need to communicate what your 
 
 ### Wiring
 
+
 ### Reflection
 
 
+## circuitphython_servo
 
+### Description & Code
+this asignment was to get 2 buttons and when u press one button it goes to 180 and when u press the other one it goes to 0.
+
+
+```python
+Code goes here
+ Create a PWMOut object on Pin A2.
+pwm = pwmio.PWMOut(board.A2, duty_cycle=2 ** 15, frequency=50)
+# Create a servo object, my_servo.
+my_servo = servo.Servo(pwm)
+
+#button 1 turns to 180
+btn = DigitalInOut(board.D11)
+btn.direction = Direction.INPUT
+btn.pull = Pull.DOWN
+
+#button 2 turns to 0
+btn2 = DigitalInOut(board.D6)
+btn2.direction = Direction.INPUT
+btn2.pull = Pull.DOWN
+
+while True:
+    # if button 1 is pressed then it will turn to 180
+    if btn.value:
+        my_servo.angle = 180
+        time.sleep(0.02 )
+        print("BTN1 is pressed") 
+        # if button 2 is pressed it will turn to 0
+    if btn2.value:
+        my_servo.angle = 0
+        time.sleep(0.05)
+        print("BTN2 is pressed")
+
+
+```
+
+### Evidence
+
+### Wiring
+![buttonServoWiring](https://github.com/Mgray881/ENG3/assets/143528424/6c9d90a5-d094-45cc-bd45-f1122d33e2f1)
+
+
+
+### Reflection
+this asignment was hard but once i asked my classmate she told me what to do and it got easier. i used goggle to look up "how to wire a button." and i used adafruit to get the code.
+
+
+## Circuirphtthon Distance Sensor
+
+### Description & Code
+this asignment was to measure the distance to an object using HC-SR04.
+```python
+Code goes here
+
+```
+
+### Evidence
+
+### Wiring
+
+### Reflection
 
 
 ## NextAssignment
