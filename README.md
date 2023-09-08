@@ -12,7 +12,7 @@ This repository will actually serve as an aid to help you get started with your 
 ## Hello_CircuitPython
 
 ### Description & Code
-Description goes here
+this asignment was to make a led flash a rainbow. i did this by wiring the led to the arduino then did the code.
 
 Here's how you make code look like code:
 
@@ -62,6 +62,49 @@ What went wrong / was challenging, how'd you figure it out, and what did you lea
 
 ![WiringSolution](images/I2C_M4_Solution.png)
 
+##  Hello_CircuitPython
+
+### Description & Code
+This asignment was to make a led flash a rainbow. i did this by wiring the led to the arduino then did the code. I-+ lost my code, but this is similar to it. 
+```C
+void setup()  { 
+ 
+} 
+ 
+void loop()  {
+ 
+ 
+  for(int b = 0 ; b <= 255; b=b+5) 
+  { 
+      for(int g = 0 ; g <= 255; g=g+5) 
+    { 
+      for(int r= 0 ; r <= 255; r=r+5) 
+       { 
+        analogWrite(9, b);         
+        analogWrite(10, g);         
+        analogWrite(11, r);    
+        delay(10);
+ 
+      } 
+    }
+  }
+ 
+}
+```
+credit goes to [seeeddoc.github.io](https://seeeddoc.github.io/Arduino_Sidekick_Basic_Kit/)
+
+### Evidence
+
+### Wiring
+
+
+<img src="https://seeeddoc.github.io/Arduino_Sidekick_Basic_Kit/img/Arduino_Sidekick_RGB_LED_Display.jpg"  style="width:500px;">
+
+
+image credit goes to [https://seeeddoc.github.io(/Arduino_Sidekick_Basic_Kit/)
+### Reflection
+This asignment wasn't even hard i just had to look up how to wire a led. Cause i always wire first then do my code. 
+
 
 
 
@@ -70,7 +113,7 @@ What went wrong / was challenging, how'd you figure it out, and what did you lea
 ## CircuitPython_LCD
 
 ### Description & Code
-this asignment was to make a led flash a rainbow.
+
 ```python
 Code goes here
 import board
@@ -116,7 +159,8 @@ Pictures / Gifs of your work should go here.  You need to communicate what your 
 ## circuitphython_servo
 
 ### Description & Code
-this asignment was to get 2 buttons and when u press one button it goes to 180 and when u press the other one it goes to 0.
+This asignment was to get 2 buttons and when u press one button it goes to 180 and when u press the other one it goes to 0.
+I got this working by getting the buttons working then add the code. 
 
 
 ```python
@@ -159,13 +203,13 @@ while True:
 
 
 ### Reflection
-this asignment was hard but once i asked my classmate she told me what to do and it got easier. i used goggle to look up "how to wire a button." and i used adafruit to get the code.
+This asignment was hard but once i asked my classmate she told me what to do and it got easier. i used goggle to look up "how to wire a button." and i used adafruit to get the code.
 
 
 ## Circuirphtthon Distance Sensor
 
 ### Description & Code
-this asignment was to measure the distance to an object using HC-SR04.
+This asignment was to measure the distance to an object using HC-SR04.
 ```python
 Code goes here
 
@@ -177,6 +221,20 @@ Code goes here
 
 ### Reflection
 
+## NextAssignment
+
+### Description & Code
+
+```python
+Code goes here
+
+```
+
+### Evidence
+
+### Wiring
+
+### Reflection
 
 ## NextAssignment
 
