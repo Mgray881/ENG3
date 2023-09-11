@@ -9,58 +9,6 @@ This repository will actually serve as an aid to help you get started with your 
 * [NextAssignmentGoesHere](#NextAssignment)
 ---
 
-## Hello_CircuitPython
-
-### Description & Code
-this asignment was to make a led flash a rainbow. i did this by wiring the led to the arduino then did the code.
-
-Here's how you make code look like code:
-
-```python
-Code goes here
-
-```
-
-
-### Evidence
-
-
-![spinningMetro_Optimized](https://user-images.githubusercontent.com/54641488/192549584-18285130-2e3b-4631-8005-0792c2942f73.gif)
-
-
-And here is how you should give image credit to someone if you use their work:
-
-Image credit goes to [Rick A](https://www.youtube.com/watch?v=dQw4w9WgXcQ&scrlybrkr=8931d0bc)
-
-
-
-### Wiring
-Make an account with your Google ID at [tinkercad.com](https://www.tinkercad.com/learn/circuits), and use "TinkerCad Circuits to make a wiring diagram."  It's really easy!  
-Then post an image here.   [here's a quick tutorial for all markdown code, like making links](https://guides.github.com/features/mastering-markdown/)
-
-### Reflection
-What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience?  Your ultimate goal for the reflection is to pass on the knowledge that will make this assignment better or easier for the next person.
-
-
-
-
-## How To Fix the LCD power issue with Metro M4 boards.
-
-### Description & Code
-
-* **The symptoms:**  LCD acting weird OR trouble with usb connection / serial monitor / uploading / etc.
-* **The problem :** The LCDs occasionally draw too much power when we turn on the boards, and that makes parts of its serial communications crash.
-* **The Solution:** Add this code, and wire a switch up, like the wiring diagram below:
-
-
-
-```python
-
-
-```
-### Wiring
-
-![WiringSolution](images/I2C_M4_Solution.png)
 
 ##  Hello_CircuitPython
 
@@ -218,6 +166,10 @@ Code goes here
 ### Evidence
 
 ### Wiring
+![ultrasonic-sensor-hc-sr04/](https://howtomechatronics.com/wp-content/uploads/2022/02/HC-SR04-Ultrasonic-Sensor-Arduino-Connection-Wiring-1024x580.png?ezimgfmt=ng:webp/ngcb2)
+
+image credit goes to [howtomechatronics.com](https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/)
+
 
 ### Reflection
 
